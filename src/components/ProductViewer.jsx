@@ -3,7 +3,7 @@ import useMacbookStore from '../store'
 import clsx from 'clsx';
 import { Canvas } from '@react-three/fiber';
 import { Box, OrbitControls } from '@react-three/drei';
-import { MacbookModel14 } from './models/Macbook-14';
+import MacbookModel14 from './models/Macbook-14';
 import StudioLight from './three/StudioLight';
 import ModelSwitcher from './three/ModelSwitcher';
 import { useMediaQuery } from 'react-responsive';
@@ -50,8 +50,8 @@ const ProductViewer = () => {
 
   {/* add the light part here  */}
   <StudioLight/>
-  <MacbookModel14 scale={0.06} position={[0,0,0 ]}/>
-    <ModelSwitcher scale={isMobaile ? scale -0.03 : scale} />
+  {/* <MacbookModel14 scale={0.06} position={[0,0,0 ]}/> */}
+    <ModelSwitcher scale={isMobaile ? scale -0.03 : scale} isMobile={isMobaile}/>
         </Canvas>
     </section>
   )
