@@ -62,7 +62,7 @@ const Showcase = () => {
                             <div className=' space-y-2'>
                                 <p>Up to</p>
                                 <h3>1.5x faster</h3>
-                                <p> CPU preformance than M2</p>
+                                <p>CPU performance than M2</p>
 
                             </div>
                            </div>
