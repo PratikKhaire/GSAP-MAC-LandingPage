@@ -4,6 +4,7 @@ import Hero from './components/Hero'
 import ProductViewer from './components/ProductViewer'
 import gsap from 'gsap';
 import { ScrollTrigger }from 'gsap/all';
+import Showcase from './components/Showcase';
 
 
 //registration of the gsap 
@@ -17,6 +18,7 @@ const App = () => {
       <Navbar/>
       <Hero/>
       <ProductViewer/>
+      <Showcase/>
     </main>
   )
 }
